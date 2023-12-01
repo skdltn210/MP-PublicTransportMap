@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="뒤로가기"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="따릉이 대여소 정보"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/backImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/textViewStationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="대여소 이름:"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewRackCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="거치대 개수:"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewStationName"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textViewParkingBikeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주차된 자전거 수:"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewRackCount"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textViewShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="거치율:"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewParkingBikeCount"
+        android:layout_marginTop="32dp" />
+</RelativeLayout>

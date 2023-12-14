@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#FFD8BFD8"
+        app:cardBackgroundColor="#EAEAEA"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp">
 
@@ -29,7 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="#000000"
-                    android:textSize="10sp"
+                    android:textSize="9sp"
                     android:maxLines="1"
                     android:layout_marginBottom="3dp" />
 
@@ -46,7 +46,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
-                    android:textSize="10sp"
+                    android:textSize="9sp"
                     android:maxLines="1"
                     android:layout_marginBottom="3dp" />
 
@@ -55,7 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
-                    android:textSize="10sp"
+                    android:textSize="9sp"
                     android:maxLines="1"
                     android:layout_marginBottom="3dp"/>
 

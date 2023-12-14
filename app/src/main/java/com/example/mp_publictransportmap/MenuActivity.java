@@ -3,7 +3,7 @@ package com.example.mp_publictransportmap;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -30,9 +30,9 @@ public class MenuActivity extends AppCompatActivity {
 
         Toast.makeText(this, "환영합니다! " + username + "님", Toast.LENGTH_SHORT).show();
 
-        Button buttonBus = findViewById(R.id.buttonBus);
-        Button buttonSubway = findViewById(R.id.buttonSubway);
-        Button buttonBike = findViewById(R.id.buttonBike);
+        ImageButton buttonBus = findViewById(R.id.buttonBus);
+        ImageButton buttonSubway = findViewById(R.id.buttonSubway);
+        ImageButton buttonBike = findViewById(R.id.buttonBike);
 
         buttonBus.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -149,7 +149,7 @@ public class MapActivity3 extends AppCompatActivity implements MapView.POIItemEv
 
         intent.putExtra("stopName", busStation.stop_nm);
         intent.putExtra("stopType", busStation.stop_type);
-        intent.putExtra("nodeId", busStation.node_id);
+        intent.putExtra("stop_no", busStation.stop_no);
 
         startActivity(intent);
     }

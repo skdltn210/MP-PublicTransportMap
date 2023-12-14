@@ -4,23 +4,44 @@
     android:background="@drawable/bg"
     android:alpha="0.9">
 
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_margin="16dp"
+        android:contentDescription="뒤로가기"
+        android:src="@drawable/back" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
-        android:text="서울시 대중교통 지도"
+        android:text="회원 가입"
         android:textStyle="bold"
         android:textColor="@android:color/black"
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextId"
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:padding="10dp"
+        android:hint="이름을 입력하세요"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:padding="10dp"
         android:hint="아이디를 입력하세요"
@@ -28,10 +49,10 @@
         android:textColor="@android:color/black" />
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/PassWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextId"
+        android:layout_below="@id/ID"
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
@@ -42,26 +63,15 @@
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/Register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextPassword"
+        android:layout_below="@id/PassWord"
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:padding="15dp"
-        android:text="로그인"
-        android:textColor="@android:color/white" />
-
-    <Button
-        android:id="@+id/buttonRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonLogin"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:padding="15dp"
-        android:text="회원가입"
+        android:text="등록"
         android:textColor="@android:color/white" />
 
 </RelativeLayout>

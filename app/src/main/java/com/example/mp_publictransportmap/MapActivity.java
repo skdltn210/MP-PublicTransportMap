@@ -127,7 +127,6 @@ public class MapActivity extends AppCompatActivity implements MapView.POIItemEve
             JSONObject rentBikeStatus = jsonResponse.getJSONObject("rentBikeStatus");
             JSONArray rowArray = rentBikeStatus.getJSONArray("row");
             for (int i = 0; i < rowArray.length(); i++) {
-                Log.i("abc",String.valueOf(i));
                 JSONObject stationObject = rowArray.getJSONObject(i);
                 BikeStation bikeStation = gson.fromJson(stationObject.toString(), BikeStation.class);
                 bikeStationList.bikeStationList.add(bikeStation);

@@ -7,7 +7,9 @@
     <ImageView
         android:id="@+id/backImageView"
         android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:contentDescription="뒤로가기"
@@ -17,166 +19,53 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="20dp"
         android:text="버스 정류장 정보"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_below="@id/backImageView"
-        android:layout_centerHorizontal="true"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewStopName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="정류장 이름 :"
-        android:textSize="18sp"
         android:layout_below="@id/textViewTitle"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="0dp"
+        android:text="정류장 이름:"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textViewStopType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="정류장 타입 :"
-        android:textSize="18sp"
         android:layout_below="@id/textViewStopName"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="0dp"
+        android:text="정류장 타입 :"
+        android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textViewSectionName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="구간명 : "
-        android:textSize="18sp"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@id/textViewStopType"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewRouteType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="노선 유형 : "
-        android:textSize="18sp"
-        android:layout_below="@id/textViewSectionName"
-        android:layout_marginTop="20dp" />
 
-    <TextView
-        android:id="@+id/textViewrtNm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="노선명 : "
-        android:textSize="18sp"
-        android:layout_below="@id/textViewRouteType"
-        android:layout_marginTop="20dp" />
+        <LinearLayout
+            android:id="@+id/busLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#CCCCCC"
+            android:orientation="vertical">
 
-    <RelativeLayout
-        android:id="@+id/firstBusLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewrtNm"
-        android:layout_marginTop="40dp">
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textViewArrivalMsg1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="도착정보메시지1 : "
-            android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textViewBusType1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="차량유형1 : "
-            android:textSize="18sp"
-            android:layout_below="@id/textViewArrivalMsg1"
-            android:layout_marginTop="20dp" />
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true">
-
-            <TextView
-                android:id="@+id/textViewFullFlag1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="만차여부1 : "
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/textViewLastFlag1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="막차여부1 : "
-                android:textSize="18sp"
-                android:layout_below="@id/textViewFullFlag1"
-                android:layout_marginTop="20dp" />
-
-            <TextView
-                android:id="@+id/textViewRerideNum1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="재차인원1 : "
-                android:textSize="18sp"
-                android:layout_below="@id/textViewLastFlag1"
-                android:layout_marginTop="20dp" />
-        </RelativeLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/secondBusLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/firstBusLayout"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:id="@+id/textViewArrivalMsg2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="도착정보메시지2 : "
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textViewBusType2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="차량유형2 : "
-            android:textSize="18sp"
-            android:layout_below="@id/textViewArrivalMsg2"
-            android:layout_marginTop="20dp" />
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true">
-
-            <TextView
-                android:id="@+id/textViewFullFlag2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="만차여부2 : "
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/textViewLastFlag2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="막차여부2 : "
-                android:textSize="18sp"
-                android:layout_below="@id/textViewFullFlag2"
-                android:layout_marginTop="20dp" />
-
-            <TextView
-                android:id="@+id/textViewRerideNum2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="재차인원2 : "
-                android:textSize="18sp"
-                android:layout_below="@id/textViewLastFlag2"
-                android:layout_marginTop="20dp" />
-        </RelativeLayout>
-    </RelativeLayout>
-
+    </LinearLayout>
 
 </RelativeLayout>

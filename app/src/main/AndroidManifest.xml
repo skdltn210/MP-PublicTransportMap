@@ -28,6 +28,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".DBHelper"/>
         <activity android:name=".BikeStationActivity"/>
         <activity android:name=".MetroStationActivity"/>
         <activity android:name=".BusStationActivity"/>

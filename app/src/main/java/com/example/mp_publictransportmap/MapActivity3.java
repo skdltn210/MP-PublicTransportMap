@@ -52,7 +52,7 @@ public class MapActivity3 extends AppCompatActivity implements MapView.POIItemEv
         mapView = new MapView(this);
         busStationList = new BusStationList();
 
-        JSONArray jsonArray = loadJSONArrayFromRawResource(R.raw.bus_station2);
+        JSONArray jsonArray = loadJSONArrayFromRawResource(R.raw.bus_station);
         if (jsonArray != null) {
             addMarkersFromJsonArray(jsonArray);
         }
